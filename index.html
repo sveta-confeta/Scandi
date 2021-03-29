@@ -7,15 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
+        <div class="header_wrapper ">
+      
         <a href="#">
             <img src="./img/SCANDI.png" alt="logo">
         </a>
+        
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#">О компании</a></li>
                 <li> <a href="#">Портфолио</a></li>
                 <li> <a href="#">Команда</a></li>
@@ -25,12 +32,14 @@
            </ul>
         </nav>
         <div class="tel">
-            +7 (981) 857-46-24
+            +374 (44) 583-67-32
         </div>
+        
+    </div>
     </header>
     <main>
         <section class="promo">
-            <div class="content">
+            <div class="content aos aos--first" data-aos="fade-right" data-aos-duration="1100">
             <h1>
                 Поможем сделать вашу квартиру уютнее
             </h1>
@@ -43,8 +52,8 @@
         <section class="about">
             <h3>O НАС</h3>
             <div class="content">
-            <img src="./img/about.jpg">
-            <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.<br><br>
+            <img src="./img/about.jpg" class="aos aos--second" data-aos="zoom-in" data-aos-duration="1100">
+            <p data-aos="fade-up" data-aos-duration="1100">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.<br><br>
                Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
                 « Да! Это именно то, что действительно достойно моего дома!»</p>
             </div>
@@ -52,9 +61,9 @@
         <section class="preim">
           <div class="content">
          <ul>
-             <li><b>5</b> ЛЕТ ОПЫТА</li>
-             <li><b>100</b> ПРОЕКТОВ</li>
-             <li><b>10</b> НАГРАД</li>
+             <li data-aos="fade-up" data-aos-duration="1100"><b>5</b> ЛЕТ ОПЫТА</li>
+             <li data-aos="fade-up" data-aos-duration="1100"><b>100</b> ПРОЕКТОВ</li>
+             <li data-aos="fade-up" data-aos-duration="1100"><b>10</b> НАГРАД</li>
          </ul>
         </div>
         </section>
@@ -62,23 +71,45 @@
             <h3>
                 НАШИ РАБОТЫ
             </h3>
+            <div class="content">
             <ul>
-                <li> <img src="./img/work/image 55.jpg"></li>
-                <li><img src="./img/work/Rectangle 134.jpg"></li>
-                <li class="work_item3"><img src="./img/work/Rectangle 132.jpg"></li>
-                <li class="work_item4"><img src="./img/work/image 56.jpg"></li>
+                <li class="works-item" data-aos="fade-down" data-aos-duration="1100"> <img src="./img/work/image 55.jpg"><div class="works-hover">
+                    <h4 class="works-heading">Квартира-студия
+                        30 кв.м.</h4>
+                    <p class="works-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                        на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                </div></li>
+                <li class="works-item" data-aos="fade-down" data-aos-duration="1100"><img src="./img/work/Rectangle 134.jpg"><div class="works-hover">
+                    <h4 class="works-heading">Квартира-студия
+                        30 кв.м.</h4>
+                    <p class="works-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                        на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                </div></li>
+                <li class="works-item work_item3" data-aos="fade-up" data-aos-duration="1100"><img src="./img/work/Rectangle 132.jpg"><div class="works-hover">
+                    <h4 class="works-heading">Квартира-студия
+                        30 кв.м.</h4>
+                    <p class="works-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                        на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                </div></li>
+                <li class="works-item work_item4 " data-aos="fade-up" data-aos-duration="1100"><img src="./img/work/image 56.jpg"><div class="works-hover">
+                    <h4 class="works-heading">Квартира-студия
+                        30 кв.м.</h4>
+                    <p class="works-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                        на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                </div></li>
             </ul>
+        </div>
             <a href="#">Смотреть ещё </a>
         </section>
         <section class="team">
             <h3>КОМАНДА</h3>
             <div class="content">
             <ul class="team_card">
-                <li><img src="./img/image-58.jpg"><p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+                <li data-aos="fade-right" data-aos-duration="1100"><img src="./img/image-58.jpg"><p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
                     и помогает сделать вашу квартиру красивой и уютной.</p></li>
-                <li><img src="./img/image-59.jpg"><p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
+                <li data-aos="fade-down" data-aos-duration="1100"><img src="./img/image-59.jpg"><p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
                     и ответит на все вопросы.</p></li>
-                <li><img src="./img/image-61.jpg"><p>Катя тоже занимается дизайном.
+                <li data-aos="fade-left" data-aos-duration="1100"><img src="./img/image-61.jpg"><p>Катя тоже занимается дизайном.
                     Она всегда находит общий язык
                     с клиентами и точно знает,
                     как обсутроить дом так, чтобы вам понравилось.</p></li>
@@ -86,13 +117,13 @@
             <h3>Как мы работаем</h3>
             
             <ul class="team_list">
-                <li><div class="raund">1</div><p>Знакомимся, выезжаем
+                <li  data-aos="fade-up" data-aos-duration="1100"><div class="raund">1</div><p>Знакомимся, выезжаем
                     на объект, утверждаем концепцию, подписывем договор.</p></li>
-                <li><div class="raund">2</div></span><p>Подбираем мебель, текстиль, аксессуры. Делаем 3D-
+                <li  data-aos="fade-up" data-aos-duration="1100"><div class="raund">2</div></span><p>Подбираем мебель, текстиль, аксессуры. Делаем 3D-
                     зуализацию.</p></li>
-                <li><div class="raund">3</div><p>Находим нужные магазины, помогаем с доставкой
+                <li  data-aos="fade-up" data-aos-duration="1100"><div class="raund">3</div><p>Находим нужные магазины, помогаем с доставкой
                     и оплатой товаров.</p></li>
-                <li><div class="raund">4</div><p>Воплощаем проект в жизнь:
+                <li  data-aos="fade-up" data-aos-duration="1100"><div class="raund">4</div><p>Воплощаем проект в жизнь:
                     расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p></li>
             </ul>
         
@@ -101,9 +132,14 @@
         <section class="reviews">
             <h3>Отзывы</h3>
             <div class="content">
-             <button class=" btn btn_left"></button>  
-            <div class="reviews_wrapper">
-                <div class="p_wrapper">
+            <div class="swiper-container"> 
+            
+
+            
+             
+            <div class="reviews_wrapper swiper-wrapper">
+                <div class="swiper-slide one">
+                <div class="p_wrapper"  data-aos="fade-up" data-aos-duration="1100">
                 <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
 
                  <p>   Работа шла быстро, было очень приятно общаться и взаимодествовайть
@@ -112,12 +148,34 @@
                 <p>   Буду советовать и своим друзьям к вам обращаться!»</p>
                 <p>АННА БЕЛОВСКАЯ</p>
                 </div>
-                <div class="reviews_img">
-                <img src="./img/reviews/image 62.jpg">
-                <img src="./img/reviews/Rectangle 141.jpg">
-            </div>  </div>
-            <button class=" btn btn_right"></button> 
-        </div>
+                <div  class="reviews_img">
+                <img src="./img/reviews/image 62.jpg" data-aos="flip-left" data-aos-duration="1500">
+                <img src="./img/reviews/Rectangle 141.jpg" data-aos="flip-right" data-aos-duration="1500">
+            </div> </div> <!--/slide1-->
+            <div class="swiper-slide two">
+                <div class="p_wrapper"  data-aos="fade-up" data-aos-duration="1100">
+                <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+
+                 <p>   Работа шла быстро, было очень приятно общаться и взаимодествовайть
+                    с сотрудниками. Не ожидала, что это будет так легко!</p>
+                    
+                <p>   Буду советовать и своим друзьям к вам обращаться!»</p>
+                <p>АННА БЕЛОВСКАЯ</p>
+                </div>
+                <div  class="reviews_img">
+                <img src="./img/reviews/image 62.jpg" data-aos="flip-left" data-aos-duration="1500">
+                <img src="./img/reviews/Rectangle 141.jpg" data-aos="flip-right" data-aos-duration="1500">
+            </div></div>  <!--/slide2-->
+        </div><!--wrapper-->
+        <button  type="button"  class="btn btn_left swiper-button-prev"></button>
+            <button  type="button" class=" btn btn_right swiper-button-next"></button>
+           
+            <div class="swiper-pagination"></div>   
+    
+  
+  <!---->
+</div>    <!--/content-->   
+</div> <!--/sweeper container-->    
         </section>
    
     <section class="map">
@@ -142,12 +200,15 @@
 <footer>
     <div class="content">
     <ul>
-        <li><p>+7 (981) 857-46-24</p></li>
-        <li><p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p></li>
-        <li><p>ИП Королёва А.А.</p></li>
+        <li><p>+375 (44) 573-67-32</p></li>
+        <li><p>г. Минск, ул. Одоевского, 70</p></li>
+        <li><p>Шунькова С.В.</p></li>
         
     </ul>
 </div>
 </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./swiper.js"></script>
 </body>
 </html>
